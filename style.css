@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+  }
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+:root{
+    --primary--:#fff;
+    --Second--:#fff;
+    --third--:#fff;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+
+body{
+    font-family: 'Lato', sans-serif;
+
+}
+
+
+.section{
+    padding-bottom:5rem ;
+    position: relative;
+
+}
+
+.shape1{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    top: 99%;
+
+}
+
+.shape2{
+    position: absolute;
+    width: 100%;
+    bottom: 99%;
+    z-index: -1;
+}
+
+.shape3{
+    position: absolute;
+    width: 100%;
+    top: 99%;
+    z-index: -1;
+}
+.navbar-brand {
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+
+}
+
+.navbar-nav {
+    font-size: 1.1rem;
+    font-weight: 300;
+    gap: 5rem;
+    color: #fff;
+
+}
+.nav-link{
+    color: #fff;
+
+}
+
+.nav-link:hover{
+    color: #fff;
+
+}
+
+.navbar-collapse{
+    justify-content: flex-end;
+}
+
+
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #fff;
+    transition: width .3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+/*-------------home section-------------*/
+.home{
+    padding-top:10rem ;
+    padding-bottom:10rem ;
+
+}
+.home h1 {
+    text-transform: uppercase;
+    font-weight: 300;
+    padding-bottom: 2rem;
+    color: #fff;
+
+}
+
+
+.home p {
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+    font-weight: 300;
+    color: #fff;
+
+}
+
+.home a {
+    color: #fff;
+    font-weight: 300;
+}
+
+.move{
+    font-size: .8rem;
+    padding-left: .5rem;
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+.see-more::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #fff;
+    transition: width .3s;
+}
+
+.see-more:hover::after {
+    width: 10%;
+    transition: width .3s;
+}
+@keyframes move {
+    0%   {left: 0px;}
+    50%  {left: 20px;}
+    100% {left: 0px;}
+  }
+
+.home-icons ul {
+    display: flex;
+    gap: 2rem;
+    padding-left: 0;
+}
+
+.home-icons {
+    margin-top: 1.5rem;
+}
+.home-icons a i{
+    font-size: 1.1rem;
+    padding-left:0;
+}
+
+
+
+/*-------------about section-------------*/
+.about{
+    padding-bottom:10rem ;
+        padding-top:10rem ;
+
+}
+
+
+
+
+.about h1 {
+    font-weight: 300;
+    padding-bottom: 4rem;
+    padding-top: 2rem;
+}
+
+.about p {
+
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.about h3 {
+    text-transform: uppercase;
+}
+
+.skills-section {
+    margin-top: 2rem;
+        padding-left: 1rem;
+        border-left: 1px solid #000;
+}
+
+.skills-section span {
+    font-weight: 300;
+}
+
+
+.list-1 {
+    display: flex;
+    align-items: baseline;
+    padding-bottom:1rem ;
+}
+
+.list-1 ul {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0;
+}
+
+.list-1 i {
+    font-size: 1.5rem;
+}
+
+.experience-section {
+    margin-top: 2rem;
+    padding-left: 1rem;
+    border-left: 1px solid #000;
+}
+
+.experience-section span {
+    font-weight: 300;
+}
+
+/*-------------Projects section-------------*/
+
+.projects{
+    padding-bottom:10rem ;
+    color: #fff;
+
+}
+
+.projects h1 {
+    font-weight: 300;
+    padding-bottom: 4rem;
+    padding-top: 2rem;
+    color: #fff;
+
+}
+
+.project-image img {
+    max-width: 100%;
+    object-fit: fill;
+}
+
+.project {
+    max-width: 60%;
+    margin: auto;
+}
+
+
+.project-info {
+    padding-top: 1rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+    display: flex;
+}
+
+.project-info ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.project-info a {
+    color: #fff;
+}
+
+.project-info span {
+    font-weight: 300;
+    color: #fff;
+
+}
+
+
+
+
+/*-------------contact section-------------*/
+
+
+.contact{
+    padding-top:10rem ;
+}
+
+
+.contact h1 {
+    font-weight: 300;
+    padding-bottom: 4rem;
+    padding-top: 2rem;
+}
+
+
+.contact p {
+
+    font-weight: 300;
+    font-size: 1.4rem;
+    padding-bottom: 1.5rem;
+
+}
+
+.contact ul{
+    display: flex;
+    gap: 2rem;
+    padding-left: 0rem;
+
+}
+
+.contact a {
+    color: #000;
+    font-weight: 300;
+}
+
